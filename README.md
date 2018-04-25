@@ -41,7 +41,7 @@ end program
 <pre lang="fortran">
 module my_module
     ...
-end my_module
+end module my_module
 </pre>
         </td>
         <td>A source file is a module.</td>
@@ -52,7 +52,7 @@ end my_module
 <pre lang="fortran">
 subroutine my_subroutine
     ...
-end my_subroutine
+end subroutine my_subroutine
 </pre>
         </td>
         <td>Functions that have side effects.</td>
