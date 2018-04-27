@@ -286,7 +286,7 @@ x = 0.
         <td>
 <pre lang="fortran">
 integer, parameter :: answer = 42
-real, parameter :: pi = 4. * atan(1.)
+real(8), parameter :: pi = 4d0 * atan(1d0)
 </pre>
         </td>
         <td>Not supported in Python. Names are <i>bindings</i>.</td>
