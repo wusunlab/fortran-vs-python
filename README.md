@@ -92,8 +92,8 @@ end module main_module
         <td>
 <pre lang="fortran">
 use my_module
-use my_module, only :: fun1, var1
-use my_module, only :: new_var => var
+use my_module, only : fun1, var1
+use my_module, only : new_var => var
 </pre>
         </td>
         <td>
