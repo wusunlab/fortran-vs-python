@@ -859,7 +859,7 @@ end where
         <td>For NumPy arrays,
 <pre lang="python">
 b[a > 0] = 0
-b[a <= 0] - 1
+b[a <= 0] = 1
 </pre>
 For lists, use the higher order function <code>filter()</code> or list comprehension.
         </td>
