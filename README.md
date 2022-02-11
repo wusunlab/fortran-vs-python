@@ -201,7 +201,17 @@ select case <i>&lt;expr&gt;</i>
 end select
 </pre>
         </td>
-        <td>Not supported. Any <code>case ... switch</code> statement can be written as an equivalent <code>if-then-else</code> statement.</td>
+        <td>
+<pre lang="python">
+match <i>&lt;expr&gt;</i>:
+    case <i>&lt;pattern&gt;</i>:
+        ...
+    case <i>&lt;pattern&gt;</i>:
+        ...
+    case <i>_</i>:
+        ...
+</pre>
+        </td>
     </tr>
     <tr>
         <td><code>do</code> construct</td>
