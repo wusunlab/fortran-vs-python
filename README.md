@@ -2,16 +2,16 @@
 
 Wu Sun
 
-Last updated: 2018-04-25
+Last updated: 2022-02-11
 
 This is a simple cheatsheet to aid scientific programmers who work at the
 interfaces of both languages. ***It is by no means an exhaustive list***. (I
-have yet to explore some advanced features in the Fortran 2008 standard.)
+have yet to explore some advanced features in the Fortran 2008 and newer
+standards.)
 
 Make Fortran Modern Again!
 
-This work is licensed under the [Creative Commons Attribution 4.0 International
-License.](http://creativecommons.org/licenses/by/4.0/).
+This work is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 <table>
     <tr>
@@ -201,7 +201,7 @@ select case <i>&lt;expr&gt;</i>
 end select
 </pre>
         </td>
-        <td>
+        <td><a href="https://www.python.org/dev/peps/pep-0636/">Structural pattern matching</a>, supported since Python 3.10:
 <pre lang="python">
 match <i>&lt;expr&gt;</i>:
     case <i>&lt;pattern&gt;</i>:
@@ -324,7 +324,7 @@ character(len=:), allocatable :: str_var_length
         </td>
         <td>
 <pre lang="python">
-string = 'this is a string'
+string = "this is a string"
 </pre>
         </td>
     </tr>
@@ -846,8 +846,10 @@ string.index(substring)
         </td>
         <td>
 <pre lang="python">
-'hello' + 'world'
-</pre>
+"hello" + "world"
+"hello" "world"
+("hello" "world")
+</pre>The operator may be omitted.
         </td>
     </tr>
     <tr>
